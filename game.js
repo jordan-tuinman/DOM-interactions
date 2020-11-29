@@ -17,19 +17,25 @@ function bindEventListeners (dots) {
 }
 
 function makeGreen (evt) {
-  evt.preventDefault()
-  evt.target.classList.toggle('green')
+  evt.preventDefault();
+  evt.target.classList.toggle('green');
   updateCounts()
 }
 
 // CREATE FUNCTION makeBlue HERE
 function makeBlue(evt) {
   evt.preventDefault();
-  evt.target.classList.toggle('blue')
+  evt.target.classList.toggle('blue');
   updateCounts()
 }
 
 // CREATE FUNCTION hide HERE
+function hide(evt) {
+  evt.preventDefault();
+  evt.target.classList.toggle('invisible');
+  updateCounts()
+}
+
 
 function updateCounts () {
   var totals = {
