@@ -12,7 +12,8 @@ function bindEventListeners (dots) {
     // BIND YOUR EVENT LISTENERS HERE
     // The first one is provided for you
     dots[i].addEventListener('contextmenu', makeGreen);
-    dots[i].addEventListener('click', makeBlue)
+    dots[i].addEventListener('click', makeBlue);
+    dots[i].addEventListener('dblclick', hide)
   }
 }
 
